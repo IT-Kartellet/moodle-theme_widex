@@ -1,0 +1,129 @@
+/* NOTE - this stylesheet is written using SASS - please don't edit the css file directly!*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700)
+@import variables
+@import course
+@import block
+@import forum
+
+/* body */
+body, input
+	font-family: $open-sans
+	font-weight: 400
+	color: black
+	line-height: 1.3
+
+nav ul li
+	a, span
+		font-weight: 300
+		color: black
+
+a:hover
+	color: $blue_hover
+	text-decoration: none
+
+body
+	background-color: $background-grey
+
+h1, h2, h3, h4, h5, h6
+	text-transform: uppercase
+	font-weight: 300
+
+/* Navigation */
+.navbar-inner
+	border: none
+	color: white
+	background-color: black
+	background-image: none
+
+	.brand
+		text-shadow: none
+
+
+	.usermenu .moodle-actionmenu 
+		&.show 
+			background-color: black
+		.toggle-display.textmenu 
+			.caret 
+				border-top-color: $blue
+			.usertext
+				color: white
+				&:hover 
+					color: $blue
+		.menu
+			background-color: $blue
+			a span
+				color: white
+			li span.filler
+				border-bottom: none
+				background-color: black
+				margin: 0
+
+#page-navbar
+	background-color: $dark_grey
+	width: 100%
+	margin-top: -20px
+	height: 56px
+
+
+.breadcrumb-button
+	margin: 10px 0 8px 0
+
+	.singlebutton div,
+	input[type="submit"]
+		margin-top: 1px
+		padding: 4px 10px
+		border-radius: 0
+
+.breadcrumb
+	border-radius: 0
+	background-color: $dark_grey
+
+	+vertical-align(30%)
+	
+	li
+		text-shadow: none
+		.arrow
+			color: $blue
+		a, span
+			color: white
+			&:hover
+				color: $blue
+				text-decoration: none
+
+footer
+	background-color: #ccc
+
+input[type="text"],
+textarea,
+select
+	background-color: white
+	border: 0
+	border-radius: 0
+
+/* Text field followed by submit button */
+input[type="text"] + button[type="submit"],
+input[type="text"] + input[type="submit"],
+.forumsearch input[type="submit"],
+	margin-left: -3px
+	padding: 4px 10px
+	border-radius: 0
+
+input#id_submitbutton,
+input[type="submit"],
+button[type="submit"]
+	background: $blue
+	color: white
+	border: 0
+	padding: 10px 20px
+	text-transform: uppercase
+	text-align: center
+	border-radius: 4px
+	-webkit-transform: translateZ(0)
+	transform: translateZ(0)
+	cursor: pointer
+	text-shadow: none
+
+	&:hover
+		background: $blue_hover
+		color: white

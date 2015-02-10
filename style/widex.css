@@ -1,0 +1,140 @@
+/* NOTE - this stylesheet is written using SASS - please don't edit the css file directly! */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+.course-content a {
+  color: black; }
+.course-content ul.topics li.section.main {
+  margin: 0;
+  border-bottom: 1px solid #cccccc; }
+  .course-content ul.topics li.section.main:nth-of-type(odd) {
+    background-color: white; }
+
+.block {
+  background-color: white;
+  font-weight: 300; }
+  .block input[type="text"] {
+    background-color: #eeeeee; }
+  .block img.block-hider-hide {
+    background-image: url("data:image/svg+xml;utf-8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:a='http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/' version='1.1' x='0px' y='0px' width='12px' height='12px' viewBox='0 0 12 12' style='overflow:visible;enable-background:new 0 0 12 12;' xml:space='preserve' preserveAspectRatio='xMinYMid meet'><path style='fill:#009CDD;' d='M11,0H1C0.5,0,0,0.5,0,1v10c0,0.5,0.5,1,1,1h10c0.5,0,1-0.5,1-1V1C12,0.5,11.5,0,11,0z M11,10  c0,0.5-0.5,1-1,1H2c-0.5,0-1-0.5-1-1V4c0-0.5,0.5-1,1-1h8c0.5,0,1,0.5,1,1V10z M9,7.5C9,7.8,8.8,8,8.5,8h-5C3.2,8,3,7.8,3,7.5v-1  C3,6.2,3.2,6,3.5,6h5C8.8,6,9,6.2,9,6.5V7.5z'/></svg>"); }
+
+.forumsearch {
+  padding-top: 6px; }
+
+.forumpost {
+  background-color: white; }
+
+/* body */
+body, input {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: black;
+  line-height: 1.3; }
+
+nav ul li a, nav ul li span {
+  font-weight: 300;
+  color: black; }
+
+a:hover {
+  color: #053e77;
+  text-decoration: none; }
+
+body {
+  background-color: #eeeeee; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: 300; }
+
+/* Navigation */
+.navbar-inner {
+  border: none;
+  color: white;
+  background-color: black;
+  background-image: none; }
+  .navbar-inner .brand {
+    text-shadow: none; }
+  .navbar-inner .usermenu .moodle-actionmenu.show {
+    background-color: black; }
+  .navbar-inner .usermenu .moodle-actionmenu .toggle-display.textmenu .caret {
+    border-top-color: #009cdd; }
+  .navbar-inner .usermenu .moodle-actionmenu .toggle-display.textmenu .usertext {
+    color: white; }
+    .navbar-inner .usermenu .moodle-actionmenu .toggle-display.textmenu .usertext:hover {
+      color: #009cdd; }
+  .navbar-inner .usermenu .moodle-actionmenu .menu {
+    background-color: #009cdd; }
+    .navbar-inner .usermenu .moodle-actionmenu .menu a span {
+      color: white; }
+    .navbar-inner .usermenu .moodle-actionmenu .menu li span.filler {
+      border-bottom: none;
+      background-color: black;
+      margin: 0; }
+
+#page-navbar {
+  background-color: #313131;
+  width: 100%;
+  margin-top: -20px;
+  height: 56px; }
+
+.breadcrumb-button {
+  margin: 10px 0 8px 0; }
+  .breadcrumb-button .singlebutton div,
+  .breadcrumb-button input[type="submit"] {
+    margin-top: 1px;
+    padding: 4px 10px;
+    border-radius: 0; }
+
+.breadcrumb {
+  border-radius: 0;
+  background-color: #313131;
+  position: relative;
+  top: 30%;
+  -webkit-transform: translateY(30%);
+  -ms-transform: translateY(30%);
+  transform: translateY(30%); }
+  .breadcrumb li {
+    text-shadow: none; }
+    .breadcrumb li .arrow {
+      color: #009cdd; }
+    .breadcrumb li a, .breadcrumb li span {
+      color: white; }
+      .breadcrumb li a:hover, .breadcrumb li span:hover {
+        color: #009cdd;
+        text-decoration: none; }
+
+footer {
+  background-color: #cccccc; }
+
+input[type="text"],
+textarea,
+select {
+  background-color: white;
+  border: 0;
+  border-radius: 0; }
+
+/* Text field followed by submit button */
+input[type="text"] + button[type="submit"],
+input[type="text"] + input[type="submit"],
+.forumsearch input[type="submit"] {
+  margin-left: -3px;
+  padding: 4px 10px;
+  border-radius: 0; }
+
+input#id_submitbutton,
+input[type="submit"],
+button[type="submit"] {
+  background: #009cdd;
+  color: white;
+  border: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  cursor: pointer;
+  text-shadow: none; }
+  input#id_submitbutton:hover,
+  input[type="submit"]:hover,
+  button[type="submit"]:hover {
+    background: #053e77;
+    color: white; }
